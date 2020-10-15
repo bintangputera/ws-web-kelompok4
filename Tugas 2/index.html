@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .body{
+            padding: 5%;
+            margin-left:27%;
+            margin-top: 6%;
+            width: 35%;
+            background-color: #f1f1f1;
+        }
+        input[type=text],input[type=password]{
+            width: 300px;
+            padding: 2%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height:25px;
+            margin-left: 15px;
+        }
+        select{
+            width: 315px;
+            height:35px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #7f818d;
+            margin-left: 15px;
+        }
+        input[type=radio]{
+            margin-left: 15px;
+        }
+        input[type=submit]{
+            height: 35px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            width: 100%;
+            margin-top: 25px;
+            background-color: #4CAF50;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+    <table>
+        <tr>
+            <td>ID Kasir</td>
+            <td>:</td>
+            <td><input type="text" name="" id="" placeholder="ID"></td>
+        </tr>
+        <tr>
+            <td>Nama Kasir</td>
+            <td>:</td>
+            <td><input type="text" name="" id="" placeholder="Nama"></td>
+        </tr>
+        <tr>
+            <td>Alamat Kasir</td>
+            <td>:</td>
+            <td><select>
+                <option value="">Bondowoso</option>
+                <option value="">Jember</option>
+                <option value="">Situbondo</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Telepon Kasir</td>
+            <td>:</td>
+            <td><input type="text" name="" id="" placeholder="Telp"></td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td>:</td>
+            <td><input type="radio" name="status" id="" value="Pria"><label for="">Pria</label> <input type="radio" name="status" id="" value="Wanita"><label for="">Wanita</label></td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td>:</td>
+            <td><input type="text" name="" id="" placeholder="Username"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>:</td>
+            <td><input type="password" name="" id="" placeholder="Password"></td>
+        </tr>
+    </table>
+    <a href="target.html"><input type="submit" value="Kirim"></a>
+</div>
+</body>
+</html>
