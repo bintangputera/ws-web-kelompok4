@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tambah_semangat(){
+            var a = document.getElementById("div_semangat");
+            a.innerHTML+="<p>Sedang belajar javascript</p>";
+            alert("Hello World");
+        }
+    </script>
+</head>
+<body>
+    <h1>Belajar javascript di JTI.Polije</h1>
+    <p>Saya sedang belajar javascript, Klik tombol ini untuk menambahkan kalimat baru : </p>
+
+    <button id="tambah" onclick="tambah_semangat()">Semangat!!</button>
+
+    <div id="div_semangat"></div>
+</body>
+</html>
