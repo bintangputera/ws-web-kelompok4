@@ -1,5 +1,6 @@
 <?php
     session_start();
-    session_destroy();
+    $msg = "Berhasil logout";
+    $_SESSION['msg'] = $msg;
     header('location:login.php');
 ?>

@@ -20,7 +20,11 @@
                 header("Location: dashboard.php");
                 die();
         }else {
-            echo "Username atau password salah";
+            echo "username atau password anda salah";
+            session_start();
+            $msg = "Username atau password anda salah";
+            $_SESSION['msg'] = $msg;
+            header("location: login.php");
         }    
     }
     
