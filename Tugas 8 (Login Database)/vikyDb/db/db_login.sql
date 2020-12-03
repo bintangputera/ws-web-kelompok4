@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2020 at 04:17 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.2
+-- Generation Time: Dec 03, 2020 at 04:55 PM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.3.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -40,8 +40,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `nama`) VALUES
-(3, 'reza12', '$2y$10$Q6zAj/VQ/j1qFB0ZBhCk/.fTtiU6CdIN//ODvOaxWwZHICE7ZKEsC', 'reza'),
-(4, 'rezaz', '$2y$10$aWEwzmrG85P/WITVw1wED.nIj75PKfho7aRux58AllTX5YpMoXYya', 'reza');
+(3, 'viky12', '$2y$10$Q6zAj/VQ/j1qFB0ZBhCk/.fTtiU6CdIN//ODvOaxWwZHICE7ZKEsC', 'viky'),
+(4, 'viky23', '$2y$10$aWEwzmrG85P/WITVw1wED.nIj75PKfho7aRux58AllTX5YpMoXYya', 'viky');
 
 --
 -- Indexes for dumped tables
