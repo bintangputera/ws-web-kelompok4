@@ -77,14 +77,6 @@
                         <li <?php echo ($title == "Blog | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>blog/">Blog</a></li>
                         <li <?php echo ($title == "Kontak Kami | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>kontak/">Kontak</a></li>
                         <li <?php echo ($title == "Tentang | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>tentang/">Tentang</a>
-                            <ul class="dropdown">
-                                <li><a href="./blog-details.html">Blog Details</a></li>
-                                <li><a href="./shopping-cart.html">Shopping Cart</a></li>
-                                <li><a href="./check-out.html">Checkout</a></li>
-                                <li><a href="./faq.html">Faq</a></li>
-                                <li><a href="./register.html">Register</a></li>
-                                <li><a href="./login.html">Login</a></li>
-                            </ul>
                         </li>
                     </ul>
                 </nav>

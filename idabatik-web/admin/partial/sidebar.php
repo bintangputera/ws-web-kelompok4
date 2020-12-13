@@ -90,7 +90,7 @@
           <a class="nav-link" href="<?= $_ENV["admin_base_url"]?>galeri">
             <i class="fas fa-fw fa-image"></i>
             <span>Gallery</span></a>
-        </li>
+      </li>
       <li <?php echo ($title == "IdaBatik - Daftar Blog" or $title == "IdaBatik - Tambah Blog" or $title == "IdaBatik - Kategori Blog" or $title == "IdaBatik - Edit Blog") ? $active : $no_active; ?>>
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
           <i class="fas fa-fw fa-newspaper"></i>
@@ -104,7 +104,20 @@
 
           </div>
         </div>
-        </li>
+      </li>
+
+      <li <?php echo ($title == "IdaBatik - Tentang") ? $active : $no_active; ?>>
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTentang" aria-expanded="true" aria-controls="collapseThree">
+          <i class="fas fa-fw fa-question-circle"></i>
+          <span>Tentang</span>
+        </a>
+        <div id="collapseTentang" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="<?= $_ENV["admin_base_url"] ?>tentang">Edit Tentang</a>
+
+          </div>
+        </div>
+      </li>
         
       </li>
 
