@@ -18,7 +18,7 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
                         <a href="#"><i class="fa fa-home"></i> Home</a>
-                        <span>Contact</span>
+                        <span>Kontak</span>
                     </div>
                 </div>
             </div>
@@ -45,9 +45,8 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="contact-title">
-                        <h4>Contacts Us</h4>
-                        <p>Contrary to popular belief, Lorem Ipsum is simply random text. It has roots in a piece of
-                            classical Latin literature from 45 BC, maki years old.</p>
+                        <h4>KONTAK KAMI</h4>
+                        <p>Hubungi kami melalui kontak dibawah ini :</p>
                     </div>
                     <div class="contact-widget">
                         <div class="cw-item">
@@ -55,8 +54,8 @@
                                 <i class="ti-location-pin"></i>
                             </div>
                             <div class="ci-text">
-                                <span>Address:</span>
-                                <p>Karang Tengah, Kalianyar, Tamanan, Bondowoso Regency, East Java 68263</p>
+                                <span>Alamat:</span>
+                                <p>Karang Tengah, Kalianyar, Tamanan, Kabupaten Bondowoso, Jawa Timur 68263</p>
                             </div>
                         </div>
                         <div class="cw-item">
@@ -64,7 +63,7 @@
                                 <i class="ti-mobile"></i>
                             </div>
                             <div class="ci-text">
-                                <span>Phone:</span>
+                                <span>Nomor Telepon:</span>
                                 <p>+62 852-5880-8776</p>
                             </div>
                         </div>
@@ -74,7 +73,16 @@
                             </div>
                             <div class="ci-text">
                                 <span>Email:</span>
-                                <p>dabatik.bondowoso@gmail.com</p>
+                                <p>idabatik.bondowoso@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="cw-item">
+                            <div class="ci-icon">
+                                <i class="ti-instagram"></i>
+                            </div>
+                            <div class="ci-text">
+                                <span>Instagram:</span>
+                                <p>@idabatikbondowoso</p>
                             </div>
                         </div>
                     </div>
@@ -82,19 +90,19 @@
                 <div class="col-lg-6 offset-lg-1">
                     <div class="contact-form">
                         <div class="leave-comment">
-                            <h4>Leave A Comment</h4>
-                            <p>Our staff will call back later and answer your questions.</p>
-                            <form action="#" class="comment-form">
+                            <h4>KRITIK DAN SARAN</h4>
+                            <p>Kirim Kritik dan Saran kalian disini !!</p>
+                            <form action="<?php echo $_ENV['admin_base_url'] ?>action/add-kontak.php" method="post" class="comment-form">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <input type="text" placeholder="Your name">
+                                        <input type="text" placeholder="Nama" name="nama">
                                     </div>
                                     <div class="col-lg-6">
-                                        <input type="text" placeholder="Your email">
+                                        <input type="text" placeholder="Email" name="email">
                                     </div>
                                     <div class="col-lg-12">
-                                        <textarea placeholder="Your message"></textarea>
-                                        <button type="submit" class="site-btn">Send message</button>
+                                        <textarea placeholder="Pesan" name="pesan"></textarea>
+                                        <button type="submit" class="site-btn">Kirim</button>
                                     </div>
                                 </div>
                             </form>
@@ -143,5 +151,4 @@
     <?php include "../../partial/footer.php" ?>
 
 </body>
-
 </html>
