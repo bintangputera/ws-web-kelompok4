@@ -1,7 +1,7 @@
 <?php 
   session_start();
   if($_SESSION['status']!="login"){
-    header("location: ".$_ENV['base_url']."login.php?pesan=error");
+    header("location: ".$_ENV['admin_base_url']."login.php?pesan=error");
 
   }
 ?>
