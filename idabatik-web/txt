@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+//Admin Route
+RewriteRule ^admin/pages/blog/edit/([a-zA-Z0-9_-]+)$ ./admin/pages/blog/edit-blog.php?id=$1
+RewriteRule ^admin/pages/blog/daftar-blog/ ./admin/pages/blog/daftar-blog.php
