@@ -12,6 +12,8 @@ RewriteRule ^admin/kategori-blog ./admin/pages/blog/kategori-blog.php
 RewriteRule ^admin/daftar-user ./admin/pages/user/daftar-user.php
 RewriteRule ^admin/level-user ./admin/pages/user/level-user.php
 
+RewriteRule ^admin/tentang ./admin/pages/tentang/index.php
+
 RewriteRule ^admin/daftar-barang ./admin/pages/produk/daftar-barang.php
 RewriteRule ^admin/tambah-barang ./admin/pages/produk/tambah-barang.php
 RewriteRule ^admin/jenis-kain ./admin/pages/produk/jenis-kain.php
@@ -26,3 +28,4 @@ Rewriterule ^detail-blog/([a-zA-Z0-9_-]+)$ ./pages/blog/blog.php?slug=$1
 
 RewriteRule ^kontak ./pages/kontak/index.php
 RewriteRule ^galeri ./pages/galeri/index.php
+RewriteRule ^tentang ./pages/tentang/index.php
