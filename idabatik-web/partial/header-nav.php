@@ -28,9 +28,9 @@
             <div class="inner-header">
                 <div class="row">
                     <div class="col-lg-2 col-md-2">
-                        <div class="logo">
-                            <a href="./index.html">
-                                <img src="<?php echo $_ENV['base_url'] ?>img/logo.png" alt="">
+                        <div class="logo" style="padding: 4px !important">
+                            <a href="<?= $_ENV['base_url'] ?>">
+                                <img src="<?= $_ENV['base_url'] ?>img/log.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                     <ul>
                         <li <?php echo ($title == "IdaBatik Bondowoso") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>">Home</a></li>
                         <li <?php echo ($title == "Galeri | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>galeri/">Galeri</a></li>
-                        <li <?php echo ($title == "Koleksi | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>koleksi/">Porto</a>
+                        <li <?php echo ($title == "Koleksi | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>portofolio/">Porto</a>
                             <ul class="dropdown">
                                 <li><a href="#">Men's</a></li>
                                 <li><a href="#">Women's</a></li>

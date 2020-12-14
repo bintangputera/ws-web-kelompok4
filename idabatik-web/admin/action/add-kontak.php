@@ -13,7 +13,7 @@
 			$insert = mysqli_query($mysqli, "INSERT INTO kontak(nama, email, pesan) VALUES
 				('".$nama."', '".$email."', '".$pesan."')");
 
-			header("location: ".$_ENV['admin_base_url']."kontak ");
+			header("location: ".$_ENV['base_url']."kontak ");
 		}
 
 		if($insert){

@@ -1,6 +1,19 @@
-<?php include_once("../db/checker.php"); ?>
+<?php include_once("../db/connection.php"); ?>
 <?php
   $title = "IdaBatik - Dashboard";
+
+  // Blog
+  $query_total_blog = mysqli_query($mysqli, "SELECT COUNT(id_blog) as total FROM blog");
+  $total_blog = mysqli_fetch_array($query_total_blog);
+
+  // Produk
+  $query_total_produk = mysqli_query($mysqli, "SELECT COUNT(id_produk) as total FROM produk");
+  $total_produk = mysqli_fetch_array($query_total_produk);
+
+  // User
+  $query_total_user = mysqli_query($mysqli, "SELECT COUNT(id_user) as total FROM user");
+  $total_user = mysqli_fetch_array($query_total_user);
+
  ?>
 <?php include_once("partial/header.php") ?>
 </head>
@@ -26,7 +39,8 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i>
+            </a>
           </div>
 
           <!-- Content Row -->
@@ -38,8 +52,8 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Monthly)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">BLOG</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $total_blog['total'] ?></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -55,8 +69,8 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Produk</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $total_produk['total'] ?></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -72,8 +86,8 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">User</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $total_user['total'] ?></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>

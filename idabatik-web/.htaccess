@@ -8,6 +8,8 @@ RewriteRule ^admin/blog/edit/([a-zA-Z0-9_-]+)$ ./admin/pages/blog/edit-blog.php?
 RewriteRule ^admin/daftar-blog ./admin/pages/blog/daftar-blog.php
 RewriteRule ^admin/cms-blog ./admin/pages/blog/cms-blog.php
 RewriteRule ^admin/kategori-blog ./admin/pages/blog/kategori-blog.php
+RewriteRule ^admin/slider ./admin/pages/slider/index.php
+RewriteRule ^admin/edit-slider/([a-zA-Z0-9_-]+)$ ./admin/pages/slider/edit-slider.php?id=$1
 
 RewriteRule ^admin/daftar-user ./admin/pages/user/daftar-user.php
 RewriteRule ^admin/level-user ./admin/pages/user/level-user.php
@@ -18,14 +20,17 @@ RewriteRule ^admin/daftar-barang ./admin/pages/produk/daftar-barang.php
 RewriteRule ^admin/tambah-barang ./admin/pages/produk/tambah-barang.php
 RewriteRule ^admin/jenis-kain ./admin/pages/produk/jenis-kain.php
 RewriteRule ^admin/jenis-produk ./admin/pages/produk/jenis-produk.php
+RewriteRule ^admin/pesan ./admin/pages/pesan/index.php
 
 RewriteRule ^admin/galeri ./admin/pages/galeri/cms-galeri.php
 
 #Route Landing Page
 
 RewriteRule ^blog ./pages/blog/index.php
-Rewriterule ^detail-blog/([a-zA-Z0-9_-]+)$ ./pages/blog/blog.php?slug=$1
-
+Rewriterule ^detail-blog/([a-zA-Z0-9_-].+)$ ./pages/blog/blog.php?slug=$1
 RewriteRule ^kontak ./pages/kontak/index.php
 RewriteRule ^galeri ./pages/galeri/index.php
+RewriteRule ^kategori/([a-zA-Z0-9_-]+)$ ./pages/galeri/kategori.php?id=$1
+RewriteRule ^produk/([a-zA-Z0-9_-]+)$ ./pages/galeri/detail-product.php?slug=$1
 RewriteRule ^tentang ./pages/tentang/index.php
+RewriteRule ^portofolio ./pages/portofolio/index.php

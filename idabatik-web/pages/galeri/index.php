@@ -1,6 +1,12 @@
 <?php 
     include "../../db/connection.php";
     $title = "Galeri | IdaBatik";
+
+    $query = mysqli_query($mysqli, "select produk.id_produk, produk.nama_produk, produk.slug, jenis_produk.jenis_produk, jenis_kain.jenis_kain, produk.harga, produk.deskripsi, produk.thumbnail from ((produk Inner join jenis_produk on produk.id_jenis = jenis_produk.id_jenis) INNER JOIN jenis_kain on produk.id_jenis_kain = jenis_kain.id_jenis_kain)");
+
+    $query_total_produk = mysqli_query($mysqli, "SELECT COUNT(id_produk) as total FROM produk");
+    $total_produk = mysqli_num_rows($query_total_produk);
+
     include "../../partial/header-html.php";
 ?>
 </head>
@@ -35,14 +41,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1 produts-sidebar-filter">
-                    <div class="filter-widget">
-                        <h4 class="fw-title">Categories</h4>
-                        <ul class="filter-catagories">
-                            <li><a href="#">Men</a></li>
-                            <li><a href="#">Women</a></li>
-                            <li><a href="#">Kids</a></li>
-                        </ul>
-                    </div>
+
+                    <?php include "../../partial/sidebar-gallery.php" ?>
+
                 </div>
                 <div class="col-lg-9 order-1 order-lg-2">
                     <div class="product-show-option">
@@ -62,66 +63,36 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="product-list">
                         <div class="row">
+                            <?php 
+                                while ($produk = mysqli_fetch_array($query)) {
+                            ?>
                             <div class="col-lg-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="pi-pic">
-                                        <img src="img/products/product-1.jpg" alt="">
-                                        <div class="sale pp-sale">Sale</div>
-                                        <div class="icon">
-                                            <i class="icon_heart_alt"></i>
-                                        </div>
+                                        <img width="108px" height="260px" src="<?= $_ENV['base_url']."img-uploaded/".$produk['thumbnail']?>" alt="">
                                         <ul>
-                                            <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                            <li class="w-icon active"><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                                            <li class="quick-view"><a href="<?= $_ENV['base_url']?>produk/<?= $produk['slug'] ?>">Lihat Detail</a>
+                                            </li>
                                             <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="pi-text">
-                                        <div class="catagory-name">Towel</div>
+                                        <div class="catagory-name"><?= $produk['jenis_produk'] ?></div>
                                         <a href="#">
-                                            <h5>Pure Pineapple</h5>
+                                            <h5><?= $produk['nama_produk'] ?></h5>
                                         </a>
                                         <div class="product-price">
-                                            $14.00
-                                            <span>$35.00</span>
+                                            Rp. <?= $produk['harga'] ?>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-item">
-                                    <div class="pi-pic">
-                                        <img src="img/products/product-2.jpg" alt="">
-                                        <div class="icon">
-                                            <i class="icon_heart_alt"></i>
-                                        </div>
-                                        <ul>
-                                            <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pi-text">
-                                        <div class="catagory-name">Coat</div>
-                                        <a href="#">
-                                            <h5>Guangzhou sweater</h5>
-                                        </a>
-                                        <div class="product-price">
-                                            $13.00
-                                            <span>$35.00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <?php } ?>
                         </div>
-                    </div>
-                    <div class="loading-more">
-                        <i class="icon_loading"></i>
-                        <a href="#">
-                            Loading More
-                        </a>
                     </div>
                 </div>
             </div>

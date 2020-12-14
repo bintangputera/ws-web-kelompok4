@@ -71,6 +71,19 @@
         </div>
       </li>
 
+
+      <li <?php echo ($title == "IdaBatik - Daftar Pesan") ? $active : $no_active; ?>>
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePesan" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-comments"></i>
+          <span>Data Pesan</span>
+        </a>
+        <div id="collapsePesan" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="<?= $_ENV["admin_base_url"] ?>pesan">Daftar Pesan</a>
+          </div>
+        </div>
+      </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider">
 
@@ -82,7 +95,7 @@
       <!-- Nav Item - Pages Collapse Menu -->
       <li <?php echo ($title == "IdaBatik - Daftar Slider" or $title == "IdaBatik - Tambah Slider") ? $active : $no_active; ?>>
         <li class="nav-item">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="<?= $_ENV["admin_base_url"]?>slider">
             <i class="fas fa-fw fa-images"></i>
             <span>Slider</span></a>
         </li>

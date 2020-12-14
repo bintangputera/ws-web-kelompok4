@@ -3,13 +3,13 @@
 <?php include "../../partial/header-html.php" ?>
 <?php
 
-    $result = mysqli_query($mysqli, "SELECT blog.id_blog, kategori_blog.kategori, blog.slug, blog.judul, blog.thumbnail, blog.konten_blog, blog.created_at FROM blog INNER JOIN kategori_blog ON blog.id_kategori = kategori_blog.id_kategori");
+    $result = mysqli_query($mysqli, "SELECT blog.id_blog, kategori_blog.kategori, blog.slug, blog.judul, blog.thumbnail, blog.konten_blog, blog.created_at FROM blog INNER JOIN kategori_blog ON blog.id_kategori = kategori_blog.id_kategori ORDER BY created_at DESC");
 
 ?>
 <style>
     .image-crop{
         width:100px;
-        height:300px;
+        height:200px;
         background-position:center center;
         background-repeat: no-repeat;
         object-fit: cover;
@@ -59,7 +59,7 @@
             <div class="row">
                 <div class="col-lg-12 order-1 order-lg-2">
                     <div class="row">
-                        <?php 
+                        <?php
                             while($blog_list = mysqli_fetch_array($result)){
                                 $judul = $blog_list['judul'];
                                 $thumbnail = $blog_list['thumbnail'];

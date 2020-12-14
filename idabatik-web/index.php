@@ -2,7 +2,7 @@
 <?php 
     $title = "IdaBatik Bondowoso";
 
-    $query = mysqli_query($mysqli, "SELECT * FROM gallery");
+    $query = mysqli_query($mysqli, "SELECT * FROM slider_gallery");
 ?>
 <?php include "partial/header-html.php" ?>
 </head>
@@ -26,10 +26,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">
-                            <span>Bag,kids</span>
-                            <h1>Black friday</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore</p>
+                            <h1><?= $gallery['title'] ?></h1>
+                            <p><?= $gallery['sub-title'] ?></p>
                             <a href="#" class="primary-btn">Shop Now</a>
                         </div>
                     </div>
