@@ -4,7 +4,7 @@
     $slug = $_GET['slug'];
     // var_dump($_GET) ;
 
-    $result = mysqli_query($mysqli, "SELECT blog.id_blog, kategori_blog.kategori, blog.judul, blog.thumbnail, blog.konten_blog, blog.created_at FROM blog INNER JOIN kategori_blog ON blog.id_kategori = kategori_blog.id_kategori WHERE slug = '".$slug."'");
+    $result = mysqli_query($mysqli, "SELECT * FROM portofolio WHERE slug = '".$slug."'");
 
 
     $cek = mysqli_num_rows($result);
@@ -13,12 +13,11 @@
         header("location:".$_ENV['base_url']."blog/");
     }
 
-    while ($blog = mysqli_fetch_array($result)) {
-        $judul = $blog['judul'];
-        $thumbnail = $blog['thumbnail'];
-        $konten = $blog['konten_blog'];
-        $kategori = $blog['kategori'];
-        $created_at = $blog['created_at'];
+    while ($portofolio = mysqli_fetch_array($result)) {
+        $judul = $portofolio['judul_portofolio'];
+        $thumbnail = $portofolio['thumbnail'];
+        $konten = $portofolio['deskripsi'];
+        $created_at = $portofolio['created_at'];
     }
 
     $title = $judul." | IdaBatik";
@@ -59,10 +58,10 @@
                     <div class="blog-details-inner">
                         <div class="blog-detail-title">
                             <h2><?= $judul ?></h2>
-                            <p><?= $kategori ?> <span>- <?= $created_at ?></span></p>
+                            <p><span>- <?= $created_at ?></span></p>
                         </div>
                         <div class="blog-large-pic">
-                            <img class="image-crop" src="<?= $_ENV['base_url'] ?>uploaded-images/<?= $thumbnail ?>" alt="">
+                            <img class="image-crop" src="<?= $_ENV['base_url'] ?>uploaded-images/portofolio/<?= $thumbnail ?>" alt="">
                         </div>
                         <div class="blog-detail-desc">
                             <?= $konten ?>
@@ -71,7 +70,6 @@
                             <div class="details-tag">
                                 <ul>
                                     <li><i class="fa fa-tags"></i></li>
-                                    <li><?= $kategori ?></li>
                                 </ul>
                             </div>
                             <div class="blog-share">

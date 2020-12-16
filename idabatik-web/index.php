@@ -1,4 +1,4 @@
-<?php include "db/connection.php" ?>
+ <?php include "db/connection.php" ?>
 <?php 
     $title = "IdaBatik Bondowoso";
 
@@ -13,7 +13,9 @@
         <div class="loader"></div>
     </div>
 
-    <?php include "partial/header-nav.php" ?>
+    <?php 
+    $is_blog = "no";
+    include "partial/header-nav.php" ?>
 
     <!-- Hero Section Begin -->
     <section class="hero-section">
@@ -23,11 +25,11 @@
                 
             ?>
             <div class="single-hero-items set-bg" data-setbg="<?= $_ENV['base_url'].'gallery/'.$gallery['file'] ?>">
-                <div class="container">
+                <div class="container"s>
                     <div class="row">
                         <div class="col-lg-5">
-                            <h1><?= $gallery['title'] ?></h1>
-                            <p><?= $gallery['sub-title'] ?></p>
+                            <h1 style="color: #fff"><?= $gallery['title'] ?></h1>
+                            <p style="color: #fff"><?= $gallery['sub_title'] ?></p>
                             <a href="#" class="primary-btn">Shop Now</a>
                         </div>
                     </div>

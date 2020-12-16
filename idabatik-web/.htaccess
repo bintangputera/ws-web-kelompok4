@@ -10,6 +10,8 @@ RewriteRule ^admin/cms-blog ./admin/pages/blog/cms-blog.php
 RewriteRule ^admin/kategori-blog ./admin/pages/blog/kategori-blog.php
 RewriteRule ^admin/slider ./admin/pages/slider/index.php
 RewriteRule ^admin/edit-slider/([a-zA-Z0-9_-]+)$ ./admin/pages/slider/edit-slider.php?id=$1
+RewriteRule ^admin/portofolio ./admin/pages/portofolio/index.php
+RewriteRule ^admin/tambah-portofolio ./admin/pages/portofolio/tambah-portofolio.php
 
 RewriteRule ^admin/daftar-user ./admin/pages/user/daftar-user.php
 RewriteRule ^admin/level-user ./admin/pages/user/level-user.php
@@ -34,3 +36,5 @@ RewriteRule ^kategori/([a-zA-Z0-9_-]+)$ ./pages/galeri/kategori.php?id=$1
 RewriteRule ^produk/([a-zA-Z0-9_-]+)$ ./pages/galeri/detail-product.php?slug=$1
 RewriteRule ^tentang ./pages/tentang/index.php
 RewriteRule ^portofolio ./pages/portofolio/index.php
+RewriteRule ^detail-portofolio/([a-zA-Z0-9_-].+)$ ./pages/portofolio/portofolio.php?slug=$1
+ErrorDocument 404 http://localhost/ws-web-kelompok4/idabatik-web/404

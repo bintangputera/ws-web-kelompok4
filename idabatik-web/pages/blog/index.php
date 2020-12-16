@@ -1,5 +1,6 @@
 <?php include "../../db/connection.php" ?>
-<?php $title = "Blog | IdaBatik" ?>
+<?php 
+    $title = "Blog | IdaBatik" ?>
 <?php include "../../partial/header-html.php" ?>
 <?php
 
@@ -23,7 +24,10 @@
         <div class="loader"></div>
     </div>
 
-    <?php include "../../partial/header-nav.php" ?>
+
+    <?php 
+    $is_blog = "no";
+    include "../../partial/header-nav.php" ?>
 
     <!-- Breadcrumb Section Begin -->
     <div class="breacrumb-section">
@@ -66,22 +70,23 @@
                                 $kategori = $blog_list['kategori'];
                                 $slug = $blog_list['slug'];
                                 $created_at = $blog_list['created_at'];
+                            ?>
 
-                                echo "<div class=col-lg-4 col-sm-4>";
-                                echo "<div class=blog-item>";
-                                echo "<div class=bi-pic>";
-                                echo "<img class=image-crop src= ".$_ENV['base_url']."uploaded-images/".$thumbnail.">";
-                                echo "</div>";
-                                echo "<div class=bi-text>";
-                                echo "<a href= ".$_ENV['base_url']."detail-blog/".$slug.">";
-                                echo "<h4>$judul</h4>";
-                                echo "</a>";
-                                echo "<p>$kategori<span>- ".$created_at."</span></p>";
-                                echo "</div>";
-                                echo "</div>";
-                                echo "</div>";
-                            }
-                        ?>
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="blog-item">
+                                        <div class="bi-pic">
+                                            <img class="image-crop" src="<?= $_ENV['base_url']?>uploaded-images/<?= $thumbnail ?>">
+                                        </div>
+                                        <div class="bi-text">
+                                            <a href="<?= $_ENV['base_url'] ?>detail-blog/<?= $slug ?>">
+                                                <h4><?= $judul ?></h4>
+                                            </a>
+                                            <p><?= $kategori ?><span>- <?= $created_at ?> </span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        <?php } ?>
                     </div>
                 </div>
             </div>

@@ -18,6 +18,7 @@
     </div>
 
     <?php 
+        $is_blog = "no";
         include "../../partial/header-nav.php";
     ?>
 

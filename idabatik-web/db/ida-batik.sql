@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 13, 2020 at 04:54 AM
+-- Generation Time: Dec 16, 2020 at 08:47 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -52,7 +52,9 @@ INSERT INTO `blog` (`id_blog`, `id_kategori`, `judul`, `slug`, `thumbnail`, `kon
 (46, 3, 'Pengumuman Beasiswa LINE Developer Academy 2020', 'pengumuman-beasiswa-line-developer-academy-2020', '846-instagram_post___1.png', '<p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Dengan bangga berikut ini kami umumkan nama-nama penerima Beasiswa LINE Developer Academy 2020. Cek tautan berikut ini:&nbsp;</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\"><a href=\"http://bit.ly/PenerimaBeasiswaLINEAcademy\" style=\"background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(217, 83, 79); transition: all 0.2s linear 0s;\">bit.ly/PenerimaBeasiswaLINEAcademy</a></p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Selamat kepada peserta terpilih! Manfaatkan kesempatan ini sebaik-baiknya untuk membuat portofolio-mu untuk karir masa depan.</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Program Beasiswa LINE Developer Academy 2020 merupakan kelanjutan dari program sama tahun lalu di mana LINE&nbsp; bekerja sama dengan Dicoding untuk memberikan beasiswa kelas LINE Front-end Framework (LIFF) dan LINE Chatbot untuk developer di Indonesia.&nbsp;</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">LINE Developer Academy adalah program pengembangan talenta digital Indonesia yang hadir sejak 2019. Program ini menitikberatkan pada developer yang aktif mengembangkan platform LINE yang duduk di urutan ke-5 media sosial yang paling sering digunakan masyarakat Indonesia (laporan&nbsp;<i>We Are Social</i>, Februari 2020).</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Jika kamu belum beruntung mendapatkan beasiswa ini, jangan berkecil hati ya! Nantikan program menarik lainnya dari Dicoding dan mitra kami.</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Untukmu yang terpilih, manfaatkan kesempatan belajar senilai jutaan rupiah ini dengan sebaik-baiknya.&nbsp;</p>', '0000-00-00'),
 (47, 3, 'Pengumuman Beasiswa LINE Developer Academy 2022', 'pengumuman-beasiswa-line-developer-academy-2022', '183-instagram_post___1.png', '<p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Dengan bangga berikut ini kami umumkan nama-nama penerima Beasiswa LINE Developer Academy 2020. Cek tautan berikut ini:&nbsp;</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\"><a href=\"http://bit.ly/PenerimaBeasiswaLINEAcademy\" style=\"background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(217, 83, 79); transition: all 0.2s linear 0s;\">bit.ly/PenerimaBeasiswaLINEAcademy</a></p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Selamat kepada peserta terpilih! Manfaatkan kesempatan ini sebaik-baiknya untuk membuat portofolio-mu untuk karir masa depan.</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Program Beasiswa LINE Developer Academy 2020 merupakan kelanjutan dari program sama tahun lalu di mana LINE&nbsp; bekerja sama dengan Dicoding untuk memberikan beasiswa kelas LINE Front-end Framework (LIFF) dan LINE Chatbot untuk developer di Indonesia.&nbsp;</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">LINE Developer Academy adalah program pengembangan talenta digital Indonesia yang hadir sejak 2019. Program ini menitikberatkan pada developer yang aktif mengembangkan platform LINE yang duduk di urutan ke-5 media sosial yang paling sering digunakan masyarakat Indonesia (laporan&nbsp;<i>We Are Social</i>, Februari 2020).</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Jika kamu belum beruntung mendapatkan beasiswa ini, jangan berkecil hati ya! Nantikan program menarik lainnya dari Dicoding dan mitra kami.</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Untukmu yang terpilih, manfaatkan kesempatan belajar senilai jutaan rupiah ini dengan sebaik-baiknya.&nbsp;</p>', '0000-00-00'),
 (48, 3, 'Pengumuman Beasiswa LINE Developer Academy 2030', 'pengumuman-beasiswa-line-developer-academy-2030', '315-instagram_post___1.png', '<p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Dengan bangga berikut ini kami umumkan nama-nama penerima Beasiswa LINE Developer Academy 2020. Cek tautan berikut ini:&nbsp;</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\"><a href=\"http://bit.ly/PenerimaBeasiswaLINEAcademy\" style=\"background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(217, 83, 79); transition: all 0.2s linear 0s;\">bit.ly/PenerimaBeasiswaLINEAcademy</a></p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Selamat kepada peserta terpilih! Manfaatkan kesempatan ini sebaik-baiknya untuk membuat portofolio-mu untuk karir masa depan.</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Program Beasiswa LINE Developer Academy 2020 merupakan kelanjutan dari program sama tahun lalu di mana LINE&nbsp; bekerja sama dengan Dicoding untuk memberikan beasiswa kelas LINE Front-end Framework (LIFF) dan LINE Chatbot untuk developer di Indonesia.&nbsp;</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">LINE Developer Academy adalah program pengembangan talenta digital Indonesia yang hadir sejak 2019. Program ini menitikberatkan pada developer yang aktif mengembangkan platform LINE yang duduk di urutan ke-5 media sosial yang paling sering digunakan masyarakat Indonesia (laporan&nbsp;<i>We Are Social</i>, Februari 2020).</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Jika kamu belum beruntung mendapatkan beasiswa ini, jangan berkecil hati ya! Nantikan program menarik lainnya dari Dicoding dan mitra kami.</p><p style=\"margin-right: 0px; margin-bottom: 1.6em; margin-left: 0px; line-height: 1.6em; color: rgb(85, 85, 85); font-family: &quot;Source Sans Pro&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px;\">Untukmu yang terpilih, manfaatkan kesempatan belajar senilai jutaan rupiah ini dengan sebaik-baiknya.&nbsp;</p>', '12-12-2020'),
-(49, 3, 'Bisnis di Era 4.0', 'bisnis-di-era-4.0', '488-35663.jpg', '<p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis varius nibh. Sed eget rutrum ex. Maecenas sit amet pretium mi. Maecenas consequat, odio sit amet varius finibus, eros libero vestibulum elit, at interdum dolor mi id turpis. Mauris a sem placerat, pretium mi sit amet, rhoncus mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris fringilla, neque sit amet bibendum egestas, ipsum ex ullamcorper lectus, ut pulvinar ex ligula sagittis nulla. Cras varius porta arcu quis auctor. Suspendisse a sodales sapien. Donec sit amet bibendum lorem. Mauris auctor turpis nibh, ac vestibulum enim dapibus at. Cras ut sapien tristique, elementum justo ut, tincidunt leo. Duis dapibus lacus justo, sit amet sagittis lorem vehicula in. Sed ultrices non purus vel viverra. Praesent id massa turpis.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">In rutrum at lorem ullamcorper posuere. Pellentesque in urna et ligula eleifend imperdiet. Praesent nec ligula bibendum velit pulvinar ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam venenatis et dolor consequat rutrum. Phasellus eu augue vel sapien laoreet pulvinar sit amet et dui. Donec fringilla nulla non sem viverra, eu rhoncus felis euismod. Phasellus congue quis orci eu auctor. Duis eget nibh eget nunc facilisis cursus nec vitae sapien. Integer sed elit ut elit vulputate posuere nec et libero. Maecenas eu diam quam. Maecenas interdum metus justo, vitae sodales lacus pharetra sit amet. Cras accumsan porttitor nibh, ac iaculis nulla dictum in. Aliquam vel pellentesque velit, a ornare magna. Duis commodo neque ut blandit volutpat.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Nam viverra mauris in turpis dapibus, rhoncus euismod diam suscipit. Vivamus a nibh ex. Mauris quis nisl metus. Praesent sit amet viverra tortor. Suspendisse purus nisi, ornare placerat maximus ut, scelerisque eget felis. Aliquam ut pretium odio, sed vehicula sapien. Etiam eu tincidunt ipsum. Curabitur pellentesque placerat libero, vitae sodales augue accumsan eu. Phasellus varius nisl eget mi viverra, sit amet pulvinar lectus vehicula. Sed leo orci, semper eu gravida eu, porttitor et dolor. Aliquam vehicula non ex ac feugiat. In aliquam convallis ligula sit amet imperdiet.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Cras molestie justo et lorem gravida, et facilisis quam lacinia. Cras augue massa, interdum id mi aliquet, elementum sollicitudin nisl. Nunc feugiat ante sem, a sollicitudin orci ullamcorper et. Donec commodo, est sodales fermentum auctor, erat turpis tincidunt tellus, vel pretium sapien felis sit amet tortor. Donec at mattis erat. Ut nec congue nisl. Pellentesque nec justo luctus, laoreet dui cursus, finibus ex. Praesent non sollicitudin nunc. Nullam eu malesuada ante, at congue urna. Phasellus vitae eros nec nisi fringilla volutpat. Morbi vitae risus diam. Vestibulum aliquet ultrices magna, vitae molestie mi aliquet et.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque interdum, arcu ut feugiat egestas, nisi ipsum maximus nisi, non auctor nisl ante vitae nibh. Quisque semper suscipit sem, vitae pellentesque justo ullamcorper ut. Quisque aliquam lacus nisi, vitae sollicitudin ipsum placerat ultrices. Fusce nibh nibh, pharetra ac auctor at, eleifend quis nisl. Vestibulum euismod interdum magna, ut hendrerit lorem auctor in. Vivamus at tortor at velit egestas posuere. Quisque tincidunt cursus sem vitae interdum. Aliquam sit amet lectus elit. Aliquam pharetra neque vel quam porta fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>', '13-12-2020');
+(49, 3, 'Bisnis di Era 4.0', 'bisnis-di-era-4.0', '488-35663.jpg', '<p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis varius nibh. Sed eget rutrum ex. Maecenas sit amet pretium mi. Maecenas consequat, odio sit amet varius finibus, eros libero vestibulum elit, at interdum dolor mi id turpis. Mauris a sem placerat, pretium mi sit amet, rhoncus mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris fringilla, neque sit amet bibendum egestas, ipsum ex ullamcorper lectus, ut pulvinar ex ligula sagittis nulla. Cras varius porta arcu quis auctor. Suspendisse a sodales sapien. Donec sit amet bibendum lorem. Mauris auctor turpis nibh, ac vestibulum enim dapibus at. Cras ut sapien tristique, elementum justo ut, tincidunt leo. Duis dapibus lacus justo, sit amet sagittis lorem vehicula in. Sed ultrices non purus vel viverra. Praesent id massa turpis.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">In rutrum at lorem ullamcorper posuere. Pellentesque in urna et ligula eleifend imperdiet. Praesent nec ligula bibendum velit pulvinar ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam venenatis et dolor consequat rutrum. Phasellus eu augue vel sapien laoreet pulvinar sit amet et dui. Donec fringilla nulla non sem viverra, eu rhoncus felis euismod. Phasellus congue quis orci eu auctor. Duis eget nibh eget nunc facilisis cursus nec vitae sapien. Integer sed elit ut elit vulputate posuere nec et libero. Maecenas eu diam quam. Maecenas interdum metus justo, vitae sodales lacus pharetra sit amet. Cras accumsan porttitor nibh, ac iaculis nulla dictum in. Aliquam vel pellentesque velit, a ornare magna. Duis commodo neque ut blandit volutpat.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Nam viverra mauris in turpis dapibus, rhoncus euismod diam suscipit. Vivamus a nibh ex. Mauris quis nisl metus. Praesent sit amet viverra tortor. Suspendisse purus nisi, ornare placerat maximus ut, scelerisque eget felis. Aliquam ut pretium odio, sed vehicula sapien. Etiam eu tincidunt ipsum. Curabitur pellentesque placerat libero, vitae sodales augue accumsan eu. Phasellus varius nisl eget mi viverra, sit amet pulvinar lectus vehicula. Sed leo orci, semper eu gravida eu, porttitor et dolor. Aliquam vehicula non ex ac feugiat. In aliquam convallis ligula sit amet imperdiet.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Cras molestie justo et lorem gravida, et facilisis quam lacinia. Cras augue massa, interdum id mi aliquet, elementum sollicitudin nisl. Nunc feugiat ante sem, a sollicitudin orci ullamcorper et. Donec commodo, est sodales fermentum auctor, erat turpis tincidunt tellus, vel pretium sapien felis sit amet tortor. Donec at mattis erat. Ut nec congue nisl. Pellentesque nec justo luctus, laoreet dui cursus, finibus ex. Praesent non sollicitudin nunc. Nullam eu malesuada ante, at congue urna. Phasellus vitae eros nec nisi fringilla volutpat. Morbi vitae risus diam. Vestibulum aliquet ultrices magna, vitae molestie mi aliquet et.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque interdum, arcu ut feugiat egestas, nisi ipsum maximus nisi, non auctor nisl ante vitae nibh. Quisque semper suscipit sem, vitae pellentesque justo ullamcorper ut. Quisque aliquam lacus nisi, vitae sollicitudin ipsum placerat ultrices. Fusce nibh nibh, pharetra ac auctor at, eleifend quis nisl. Vestibulum euismod interdum magna, ut hendrerit lorem auctor in. Vivamus at tortor at velit egestas posuere. Quisque tincidunt cursus sem vitae interdum. Aliquam sit amet lectus elit. Aliquam pharetra neque vel quam porta fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>', '13-12-2020'),
+(50, 5, 'PMII JAYA', 'pmii-jaya', '283-sid-meier-s-civilization-vi-fantasy-art-artwork-statue-wallpaper-preview.jpg', '<p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at facilisis arcu. Nam eleifend, massa id rutrum commodo, quam eros semper dui, id tincidunt ipsum urna et risus. Phasellus ex lorem, vehicula efficitur mauris non, vulputate maximus magna. Quisque in elementum est. Quisque facilisis enim in odio venenatis, sit amet consectetur est tempor. Phasellus rutrum venenatis varius. Integer aliquet, ex non maximus imperdiet, mi dolor volutpat purus, id dictum magna massa et risus. Proin egestas at lacus efficitur vulputate. Vestibulum aliquam, purus at auctor tempus, est nisi dignissim augue, sit amet bibendum enim massa sed lectus. Morbi egestas arcu ac massa volutpat, sed imperdiet nisl euismod. In viverra nibh eu purus posuere, ut sollicitudin tellus finibus. Nullam condimentum enim eu lacus bibendum, blandit laoreet sem mattis.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">In quis posuere leo. Morbi in diam nec ligula rutrum commodo ut ac velit. Sed facilisis, est vitae congue venenatis, purus mi aliquet orci, ut suscipit lectus justo tincidunt augue. Integer dictum viverra massa vel pulvinar. Aliquam ac accumsan neque, in vulputate turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nec metus non arcu dapibus pharetra. Curabitur vitae placerat odio, ut pharetra mi. Etiam sagittis pharetra purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam tincidunt velit eget hendrerit blandit. Phasellus magna massa, gravida nec dolor non, sagittis hendrerit massa. Cras in elit a risus volutpat tempor. Donec commodo rhoncus faucibus. Maecenas vitae varius leo.</p>', '13-12-2020'),
+(52, 3, 'Lukisan', 'lukisan', '179-35663.jpg', '<p><img src=\"https://asset-a.grid.id/crop/50x267:604x652/360x240/photo/2020/05/16/3552978988.jpg\" style=\"width: 360px;\"></p><p><span style=\"color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; text-align: justify;\"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor placerat lectus ac tempor. Integer tellus nunc, mollis eget nulla non, suscipit ultricies orci. Suspendisse iaculis purus enim, at consectetur quam bibendum eget. Sed nec tortor ac lacus sollicitudin ornare. Nullam vestibulum feugiat libero. In et ipsum sed diam facilisis finibus. Donec sit amet eros augue. In blandit mattis nisl, in tincidunt justo pellentesque ac. Nulla posuere rhoncus nisl, at porta lorem fermentum sit amet. Duis facilisis ut felis sed hendrerit. Vivamus id elit augue. Mauris ac faucibus nisi.</b></span></p><p><img src=\"https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2020/09/02/2571363274.jpg\" style=\"width: 700px;\"><span style=\"color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; text-align: justify;\"><br></span></p><h1><b>WAW</b></h1>', '13-12-2020');
 
 -- --------------------------------------------------------
 
@@ -119,7 +121,8 @@ INSERT INTO `jenis_produk` (`id_jenis`, `jenis_produk`) VALUES
 (4, 'Dompet Batik'),
 (5, 'Batik Kain'),
 (6, 'Kerajinan Tangan'),
-(7, 'Kerajinan Tangan');
+(7, 'Kerajinan Tangan'),
+(8, 'Kain Indonesia');
 
 -- --------------------------------------------------------
 
@@ -143,7 +146,30 @@ INSERT INTO `kategori_blog` (`id_kategori`, `kategori`) VALUES
 (4, 'Agama'),
 (5, 'Sosial'),
 (6, 'Politik'),
-(7, 'Budaya');
+(7, 'Budaya'),
+(8, 'Olahraga');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kontak`
+--
+
+CREATE TABLE `kontak` (
+  `id_kontak` int(5) NOT NULL,
+  `nama` varchar(30) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `pesan` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `kontak`
+--
+
+INSERT INTO `kontak` (`id_kontak`, `nama`, `email`, `pesan`) VALUES
+(1, 'Bintang Putera ', 'sangbintang917@gmail.com', 'EPICCC SEKALI'),
+(2, 'Bintang Putera ', 'sangbintang917@gmail.com', 'EPICCC SEKALI'),
+(3, 'Sang Bintang', 'sangbintang917@gmail.com', 'Websitenya bagus, informatif, dan sangat memudahkan sekali saat ingin memesan produk');
 
 -- --------------------------------------------------------
 
@@ -167,6 +193,28 @@ INSERT INTO `level` (`id_level`, `ket_level`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `portofolio`
+--
+
+CREATE TABLE `portofolio` (
+  `id_portofolio` int(11) NOT NULL,
+  `judul_portofolio` varchar(64) NOT NULL,
+  `slug` varchar(255) NOT NULL,
+  `thumbnail` varchar(255) NOT NULL,
+  `deskripsi` text NOT NULL,
+  `created_at` varchar(12) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `portofolio`
+--
+
+INSERT INTO `portofolio` (`id_portofolio`, `judul_portofolio`, `slug`, `thumbnail`, `deskripsi`, `created_at`) VALUES
+(1, 'Sertifikat ', 'sertifikat-', '840-99caf340-7c25-4fad-8a09-b8ece9de9dfa.jpg', '<p>BAGUS</p>', '0000-00-00');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `produk`
 --
 
@@ -175,6 +223,7 @@ CREATE TABLE `produk` (
   `id_jenis` int(11) NOT NULL,
   `id_jenis_kain` int(11) NOT NULL,
   `nama_produk` varchar(32) NOT NULL,
+  `slug` varchar(255) NOT NULL,
   `harga` int(11) NOT NULL,
   `deskripsi` text NOT NULL,
   `thumbnail` varchar(255) NOT NULL
@@ -184,21 +233,50 @@ CREATE TABLE `produk` (
 -- Dumping data for table `produk`
 --
 
-INSERT INTO `produk` (`id_produk`, `id_jenis`, `id_jenis_kain`, `nama_produk`, `harga`, `deskripsi`, `thumbnail`) VALUES
-(12, 3, 4, 'Batik Bondowoso', 1500000, 'Kain Batik bagus sekali asek', '672-thumbnail_2.jpg'),
-(13, 3, 2, 'Tas Ransel ', 75000, 'Tas Ransel Mantap Gan', '363-watch-desk-stopwatch-wallpaper-preview.jpg'),
-(14, 3, 1, 'Batik Gagak Hitam', 250000, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue nisl, blandit ut lacus eget, finibus lobortis metus. Aenean rutrum mollis nisl, sed gravida turpis tincidunt in. Mauris et dui condimentum, suscipit sapien non, scelerisque tellus. Nunc imperdiet, quam congue suscipit fermentum, orci lectus malesuada turpis, id vehicula erat leo non dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', '141-gal2.jpg');
+INSERT INTO `produk` (`id_produk`, `id_jenis`, `id_jenis_kain`, `nama_produk`, `slug`, `harga`, `deskripsi`, `thumbnail`) VALUES
+(19, 1, 1, 'Sepatu Batik', 'sepatu-batik', 150000, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum urna nisi, vestibulum at nunc vel, cursus consectetur lorem. Nullam vel massa eu ex fringilla vestibulum. Sed non neque non sapien ultricies fermentum et in nulla. Vestibulum pretium commodo orci, non ultricies est. Curabitur quis pellentesque ante, mattis vehicula sapien. Etiam vitae finibus risus, id ullamcorper arcu. Nam ex mauris, maximus vel elementum eget, mattis ut turpis. Donec sollicitudin erat in semper pretium. Suspendisse aliquet vel metus et vestibulum. Morbi vulputate non lacus ut tristique. Sed molestie nisl vel ex rhoncus ultricies. Mauris ut augue ut orci ultrices imperdiet in ut mauris. Donec quis fringilla dolor, sed imperdiet justo. Proin sodales, turpis a tempor fermentum, nisl dui fringilla justo, non pretium velit orci non nisl.', '874-3e2a8d29878e5e57215658768bb480b9.jpg'),
+(20, 4, 1, 'Dompet Batik', 'dompet-batik', 50000, 'Dompet Apik', '305-f0588ff8600843a4695d40a88420c4eb.jpg'),
+(21, 3, 1, 'Baju Batik Motif Kembang', 'baju-batik-motif-kembang', 150000, 'Baju batik bagus sekali', '263-50051952_312764266248007_8512068997220069830_n.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `slider-gallery`
+-- Table structure for table `slider_gallery`
 --
 
-CREATE TABLE `slider-gallery` (
+CREATE TABLE `slider_gallery` (
   `id_slider_gallery` int(11) NOT NULL,
-  `file` int(11) NOT NULL
+  `file` varchar(255) NOT NULL,
+  `title` varchar(24) NOT NULL,
+  `sub_title` varchar(56) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `slider_gallery`
+--
+
+INSERT INTO `slider_gallery` (`id_slider_gallery`, `file`, `title`, `sub_title`) VALUES
+(1, '615-slide1.jpg', 'Ida Batik ', 'Sanggar  yang berdomisili di Bondowoso'),
+(2, '198-thumbnail_2.jpg', 'Judul Hal 2', 'Sub Judul hal 2'),
+(3, '564-slide3.jpg', 'Judul Hal 3', 'Sub Judul hal 3');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tentang`
+--
+
+CREATE TABLE `tentang` (
+  `id_tentang` int(1) NOT NULL,
+  `tentang` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tentang`
+--
+
+INSERT INTO `tentang` (`id_tentang`, `tentang`) VALUES
+(1, '<p><span style=\"color: rgb(99, 99, 99); font-family: Muli, sans-serif;\">Ida Batik Bondowoso adalah sanggar batik bagus yang berdiri pada tahun 2013. Sanggar Ida Batik pertama dikelola secara berkelompok yang beranggotakan 4 orang, tetapi ibu Ida mengundurkan diri dan memutuskan untuk mengembangkan usaha sanggar batik sendiri. Saat ini sanggar ida batik memiliki 8 karyawan.&nbsp;</span><br></p>');
 
 -- --------------------------------------------------------
 
@@ -257,10 +335,22 @@ ALTER TABLE `kategori_blog`
   ADD PRIMARY KEY (`id_kategori`);
 
 --
+-- Indexes for table `kontak`
+--
+ALTER TABLE `kontak`
+  ADD PRIMARY KEY (`id_kontak`);
+
+--
 -- Indexes for table `level`
 --
 ALTER TABLE `level`
   ADD PRIMARY KEY (`id_level`);
+
+--
+-- Indexes for table `portofolio`
+--
+ALTER TABLE `portofolio`
+  ADD PRIMARY KEY (`id_portofolio`);
 
 --
 -- Indexes for table `produk`
@@ -270,10 +360,16 @@ ALTER TABLE `produk`
   ADD KEY `id_jenis` (`id_jenis`);
 
 --
--- Indexes for table `slider-gallery`
+-- Indexes for table `slider_gallery`
 --
-ALTER TABLE `slider-gallery`
+ALTER TABLE `slider_gallery`
   ADD PRIMARY KEY (`id_slider_gallery`);
+
+--
+-- Indexes for table `tentang`
+--
+ALTER TABLE `tentang`
+  ADD PRIMARY KEY (`id_tentang`);
 
 --
 -- Indexes for table `user`
@@ -290,7 +386,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `blog`
 --
 ALTER TABLE `blog`
-  MODIFY `id_blog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id_blog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `gallery`
@@ -308,25 +404,37 @@ ALTER TABLE `jenis_kain`
 -- AUTO_INCREMENT for table `jenis_produk`
 --
 ALTER TABLE `jenis_produk`
-  MODIFY `id_jenis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_jenis` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `kategori_blog`
 --
 ALTER TABLE `kategori_blog`
-  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `kontak`
+--
+ALTER TABLE `kontak`
+  MODIFY `id_kontak` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `portofolio`
+--
+ALTER TABLE `portofolio`
+  MODIFY `id_portofolio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- AUTO_INCREMENT for table `slider-gallery`
+-- AUTO_INCREMENT for table `slider_gallery`
 --
-ALTER TABLE `slider-gallery`
-  MODIFY `id_slider_gallery` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `slider_gallery`
+  MODIFY `id_slider_gallery` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `user`

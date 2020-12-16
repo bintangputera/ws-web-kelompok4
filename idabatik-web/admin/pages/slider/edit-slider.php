@@ -1,27 +1,18 @@
 <?php include_once("../../../db/connection.php"); ?>
 <?php
-  $title = "IdaBatik - Edit Blog";
+  $title = "IdaBatik - Edit Slider";
  ?>
 <?php include_once("../../partial/header.php") ?>
-<?php 
-  if (isset($_POST['update'])) {
-    $id = $_POST['id'];
-
-    $judul = $_POST['judul_blog'];
-    $kategori = $_POST['select_kategori'];
-    $thumbnail = "halo.jpg";
-    $content = $_POST['contentEditor'];
-
-    // updating data
-    $result = mysqli_query($mysqli, "UPDATE blog SET id_kategori='$kategori', judul='$judul', thumbnail='$thumbnail', konten_blog='$content' WHERE id_blog=$id");
-
-    header("location:daftar-blog");
-  }
-?>
 <?php 
   $id = $_GET['id'];
 
   $result = mysqli_query($mysqli, "SELECT * FROM slider_gallery WHERE id_slider_gallery=$id");
+
+  $count = mysqli_num_rows($result);
+
+    if($count < 1) {
+      header("location:../slider");
+    }
 
 ?>
 </head>
@@ -50,7 +41,7 @@
           </div>
 
           <!-- Content Row -->
-          <form method="post" action="../edit-blog.php">
+          <form method="post" action="<?= $_ENV['admin_base_url'] ?>pages/slider/edit-action.php" enctype="multipart/form-data">
             <div class="card shadow mb-4">
               <div class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-primary">Edit Slider</h6>
@@ -60,18 +51,21 @@
                   $slider = mysqli_fetch_array($result);
                 ?>
                 <div class="form-group">
-                  <label for="name" class="form-label">Judul Blog</label>
-                  <input type="text" name="judul_blog" id="judul_blog" value="<?= $slider['']; ?>" class="form-control form-control-user" placeholder="Judul Blog" required>
+                  <label for="title" class="form-label">Title</label>
+                  <input type="text" name="title" id="title" value="<?= $slider['title']; ?>" class="form-control form-control-user" placeholder="Title">
                 </div>
                 <div class="form-group">
-                  <label for="thumbnail_blog" class="form-label">Thumbnail</label><br>
-                  <input type="file" name="thumbnail_blog" id="thumbnail">
+                  <label for="sub-title" class="form-label">Sub title</label>
+                  <input type="text" name="sub-title" id="sub-title" value="<?= $slider['sub_title']; ?>" class="form-control form-control-user" placeholder="Judul Blog" required>
                 </div>
                 <div class="form-group">
-                  <label for="summernote" class="form-label">Isi Konten</label>
-                  <textarea id="summernote" name="contentEditor"><?= $konten_blog ?></textarea>
+                  <label for="thumbnail_gallery" class="form-label">Thumbnail</label><br>
+                  <img src="<?= $_ENV['base_url']."gallery/".$slider['file'] ?>" class="img-fluid">
                 </div>
-                <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
+                <div class="form-group">
+                  <input type="file" name="thumbnail_gallery" id="thumbnail_gallery">
+                </div>
+                <input type="hidden" name="id" value="<?= $slider['id_slider_gallery'] ?>">
                 <button class="btn btn-primary" style="margin-top: 16px" type="submit" name="update">Update</button>
               </div>
             </div>

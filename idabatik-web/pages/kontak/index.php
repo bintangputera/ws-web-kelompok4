@@ -9,7 +9,9 @@
         <div class="loader"></div>
     </div>
 
-    <?php include "../../partial/header-nav.php" ?>
+    <?php 
+    $is_blog = "no";
+    include "../../partial/header-nav.php" ?>
 
     <!-- Map Section Begin -->
     <div class="map spad">

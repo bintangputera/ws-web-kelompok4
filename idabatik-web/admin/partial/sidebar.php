@@ -58,6 +58,21 @@
           </div>
         </div>
       </li>
+      
+      <!-- Nav Item - Utilities Collapse Menu -->
+      <li <?php echo ($title == "IdaBatik - Tambah Portofolio" or $title == "IdaBatik - Daftar Portofolio") ? $active : $no_active; ?>>
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePortofolio" aria-expanded="true" aria-controls="collapsePortofolio">
+          <i class="fas fa-fw fa-check"></i>
+          <span>Data Portofoio</span>
+        </a>
+        <div id="collapsePortofolio" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="<?= $_ENV["admin_base_url"] ?>tambah-portofolio">Tambah Portofolio</a>
+            <a class="collapse-item" href="<?= $_ENV["admin_base_url"] ?>portofolio">Daftar Portofolio</a>
+          </div>
+        </div>
+      </li>
+
       <li <?php echo ($title == "IdaBatik - Jenis Produk" or $title == "IdaBatik - Jenis Kain") ? $active : $no_active; ?>>
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseJenis" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-clipboard-list"></i>

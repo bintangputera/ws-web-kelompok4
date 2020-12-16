@@ -37,7 +37,7 @@
                     <div class="col-lg-7 col-md-7">
                         <div class="advanced-search">
                             <div class="input-group">
-                                <input type="text" placeholder="Batik apa yang anda cari">
+                                <input type="text" placeholder="Apa yang anda butuhkan"">
                                 <button type="button"><i class="ti-search"></i></button>
                             </div>
                         </div>
@@ -50,31 +50,29 @@
                 <div class="nav-depart">
                     <div class="depart-btn">
                         <i class="ti-menu"></i>
-                        <span>All departments</span>
+                        <span>Semua Kategori</span>
                         <ul class="depart-hover">
-                            <li class="active"><a href="#">Women’s Clothing</a></li>
-                            <li><a href="#">Men’s Clothing</a></li>
-                            <li><a href="#">Underwear</a></li>
-                            <li><a href="#">Kid's Clothing</a></li>
-                            <li><a href="#">Brand Fashion</a></li>
-                            <li><a href="#">Accessories/Shoes</a></li>
-                            <li><a href="#">Luxury Brands</a></li>
-                            <li><a href="#">Brand Outdoor Apparel</a></li>
+                            <?php 
+                                $cat = mysqli_query($mysqli, "SELECT * FROM jenis_produk");
+                                while ($cat_list = mysqli_fetch_array($cat)) {
+                                ?>
+                                <li><a href="<?= $_ENV['base_url']?>kategori/<?= $cat_list['id_jenis'] ?>"><?= $cat_list['jenis_produk']?></a></li>
+                            <?php } ?>
                         </ul>
                     </div>
                 </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
                         <li <?php echo ($title == "IdaBatik Bondowoso") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>">Home</a></li>
-                        <li <?php echo ($title == "Galeri | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>galeri/">Galeri</a></li>
-                        <li <?php echo ($title == "Koleksi | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>portofolio/">Porto</a>
+                        <li <?php echo ($title == "Galeri | IdaBatik" or $title == "Detail Produk | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>galeri/">Galeri</a></li>
+                        <li <?php echo ($title == "Portofolio | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>portofolio">Porto</a>
                             <ul class="dropdown">
                                 <li><a href="#">Men's</a></li>
                                 <li><a href="#">Women's</a></li>
                                 <li><a href="#">Kid's</a></li>
                             </ul>
                         </li>
-                        <li <?php echo ($title == "Blog | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>blog/">Blog</a></li>
+                        <li <?php echo ($title == "Blog | IdaBatik" || $is_blog == "yes") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>blog/">Blog</a></li>
                         <li <?php echo ($title == "Kontak Kami | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>kontak/">Kontak</a></li>
                         <li <?php echo ($title == "Tentang | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>tentang/">Tentang</a>
                         </li>

@@ -20,7 +20,10 @@
         <div class="loader"></div>
     </div>
 
-    <?php include "../../partial/header-nav.php" ?>
+    <?php 
+    $is_blog = "no";
+    include "../../partial/header-nav.php" 
+    ?>
 
     <!-- Product Shop Section Begin -->
     <section class="product-shop spad page-details">

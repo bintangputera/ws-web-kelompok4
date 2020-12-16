@@ -460,18 +460,26 @@ ol {
 }
 
 .inner-header .advanced-search .input-group {
-	max-width: 70%;
 	height: 100%;
 }
 
+.inner-header .advanced-search .input-group input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	font-size: 16px;
+	color: #d1d1d1;
+	padding-left: 20px;
+}
 
 .inner-header .advanced-search .input-group button {
 	font-size: 16px;
 	color: #ffffff;
+	position: absolute;
 	right: -3px;
 	top: -1px;
 	border: 1px solid #e7ab3c;
-	background: red;
+	background: #e7ab3c;
 	padding: 12px 16px 12px;
 	cursor: pointer;
 }
@@ -936,7 +944,7 @@ ol {
 	position: absolute;
 	left: 40px;
 	top: 45%;
-	color: #252525;
+	color: #fff;
 }
 
 .hero-items .owl-nav button[type=button]:hover {

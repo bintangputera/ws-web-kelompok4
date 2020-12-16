@@ -1,10 +1,21 @@
 <?php include "../../db/connection.php" ?>
-<?php $title = "Tentang | IdaBatik" ?>
 <?php 
+    $title = "Portofolio | IdaBatik" ?>
+<?php include "../../partial/header-html.php" ?>
+<?php
 
-    $result = mysqli_query($mysqli, "SELECT * FROM tentang");
+    $result = mysqli_query($mysqli, "SELECT * FROM portofolio");
 
-    include "../../partial/header-html.php" ?>
+?>
+<style>
+    .image-crop{
+        width:100px;
+        height:400px;
+        background-position:center center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+</style>
 </head>
 
 <body>
@@ -13,37 +24,46 @@
         <div class="loader"></div>
     </div>
 
+
     <?php 
     $is_blog = "no";
     include "../../partial/header-nav.php" ?>
 
-    <!-- Contact Section Begin -->
-    <section class="contact-section spad">
+    <!-- Blog Section Begin -->
+    <section class="blog-section spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 order-1 order-lg-2">
                     <div class="row">
-                        <div class="col-lg-7">
-                            <div class="contact-title">
-                            <?php 
-                                while($data = mysqli_fetch_array($result)){
-                                
+                        <?php
+                            while($blog_list = mysqli_fetch_array($result)){
+                                $judul = $blog_list['judul_portofolio'];
+                                $thumbnail = $blog_list['thumbnail'];
+                                $slug = $blog_list['slug'];
+                                $created_at = $blog_list['created_at'];
                             ?>
-                            <h4>Tentang Kami</h4>
-                            <p><?= $data['tentang']; ?>
-                            </p>
-                            </div>
-                                <?php } ?>
-                        </div>
-                        <div class="col-lg-5">
-                            <img src="<?= $_ENV['base_url'] ?>img/tentang.jpg">
-                        </div>
+
+                                <div class="col-lg-4 col-sm-4">
+                                    <div class="blog-item">
+                                        <div class="bi-pic">
+                                            <img class="image-crop" src="<?= $_ENV['base_url']?>uploaded-images/portofolio/<?= $thumbnail ?>">
+                                        </div>
+                                        <div class="bi-text">
+                                            <a href="<?= $_ENV['base_url'] ?>detail-portofolio/<?= $slug ?>">
+                                                <h4><?= $judul ?></h4>
+                                            </a>
+                                            <p><?= $created_at ?> </span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        <?php } ?>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Contact Section End -->
+    <!-- Blog Section End -->
 
     <!-- Partner Logo Section Begin -->
     <div class="partner-logo">
