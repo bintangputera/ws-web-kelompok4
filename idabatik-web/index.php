@@ -1,8 +1,9 @@
  <?php include "db/connection.php" ?>
 <?php 
     $title = "IdaBatik Bondowoso";
-
+    $data = mysqli_query($mysqli, "select produk.id_produk, produk.nama_produk, produk.slug, jenis_produk.jenis_produk, jenis_kain.jenis_kain, produk.harga, produk.deskripsi, produk.thumbnail from ((produk Inner join jenis_produk on produk.id_jenis = jenis_produk.id_jenis) INNER JOIN jenis_kain on produk.id_jenis_kain = jenis_kain.id_jenis_kain)");
     $query = mysqli_query($mysqli, "SELECT * FROM slider_gallery");
+   
 ?>
 <?php include "partial/header-html.php" ?>
 <?php
@@ -28,7 +29,10 @@
         <div class="hero-items owl-carousel">
             <?php 
                 while ($gallery = mysqli_fetch_array($query)) {
+<<<<<<< Updated upstream
  
+=======
+>>>>>>> Stashed changes
             ?>
             <div class="single-hero-items set-bg" data-setbg="<?= $_ENV['base_url'].'gallery/'.$gallery['file'] ?>">
                 <div class="container"s>
@@ -50,6 +54,7 @@
     <div class="banner-section spad">
         <div class="container-fluid">
             <div class="row">
+<<<<<<< Updated upstream
                 <div class="col-lg-4">
                     <div class="single-banner">
                     <img  src="img/banner-1.jpg" alt="">
@@ -67,13 +72,22 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
+=======
+                <?php
+                    while ($galeri = mysqli_fetch_array($data)) { 
+                ?>
+                <div class="col-lg-4 col-md-6 col-xs-6 ml">
+                <a href="<?=$_ENV['base_url']?>pages/galeri/">
+>>>>>>> Stashed changes
                     <div class="single-banner">
-                        <img src="img/banner-3.jpg" alt="">
+                        <img width="108px" height="260px" src="<?= $_ENV['base_url']."img-uploaded/".$galeri['thumbnail']?>" alt="">
                         <div class="inner-text">
-                            <h4>Kid’s</h4>
+                            <h4><?= $galeri['jenis_produk'] ?></h4>
                         </div>
                     </div>
+                    </a>
                 </div>
+         <?php }?>
             </div>
         </div>
     </div>
@@ -205,7 +219,7 @@
                                 <img src="img/icon-1.png" alt="">
                             </div>
                             <div class="sb-text">
-                                <h6>Free Shipping</h6>
+                                <h6>Terpercaya</h6>
                                 <p>For all order over 99$</p>
                             </div>
                         </div>
@@ -213,10 +227,10 @@
                     <div class="col-lg-4">
                         <div class="single-benefit">
                             <div class="sb-icon">
-                                <img src="img/icon-2.png" alt="">
+                                <img src="img/Terpercaya-1.jpg" alt="">
                             </div>
                             <div class="sb-text">
-                                <h6>Delivery On Time</h6>
+                                <h6>Berkualitas</h6>
                                 <p>If good have prolems</p>
                             </div>
                         </div>
@@ -227,7 +241,7 @@
                                 <img src="img/icon-1.png" alt="">
                             </div>
                             <div class="sb-text">
-                                <h6>Secure Payment</h6>
+                                <h6>Bahan bagus</h6>
                                 <p>100% secure payment</p>
                             </div>
                         </div>
