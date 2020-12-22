@@ -29,10 +29,6 @@
         <div class="hero-items owl-carousel">
             <?php 
                 while ($gallery = mysqli_fetch_array($query)) {
-<<<<<<< Updated upstream
- 
-=======
->>>>>>> Stashed changes
             ?>
             <div class="single-hero-items set-bg" data-setbg="<?= $_ENV['base_url'].'gallery/'.$gallery['file'] ?>">
                 <div class="container"s>
@@ -54,31 +50,14 @@
     <div class="banner-section spad">
         <div class="container-fluid">
             <div class="row">
-<<<<<<< Updated upstream
                 <div class="col-lg-4">
-                    <div class="single-banner">
-                    <img  src="img/banner-1.jpg" alt="">
-                        <div class="inner-text">
-                            <h4>Men’s</h4>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="single-banner">
-                        <img src="img/banner-2.jpg" alt="">
-                        <div class="inner-text">
-                            <h4>Women’s</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-=======
                 <?php
                     while ($galeri = mysqli_fetch_array($data)) { 
                 ?>
-                <div class="col-lg-4 col-md-6 col-xs-6 ml">
+                <div class="col-lg-4">
                 <a href="<?=$_ENV['base_url']?>pages/galeri/">
->>>>>>> Stashed changes
                     <div class="single-banner">
                         <img width="108px" height="260px" src="<?= $_ENV['base_url']."img-uploaded/".$galeri['thumbnail']?>" alt="">
                         <div class="inner-text">
