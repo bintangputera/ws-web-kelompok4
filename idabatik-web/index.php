@@ -49,14 +49,11 @@
     <!-- Banner Section Begin -->
     <div class="banner-section spad">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4">
-                </div>
-                <div class="col-lg-4">
+        <div class="row">
                 <?php
                     while ($galeri = mysqli_fetch_array($data)) { 
                 ?>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-6">
                 <a href="<?=$_ENV['base_url']?>pages/galeri/">
                     <div class="single-banner">
                         <img width="108px" height="260px" src="<?= $_ENV['base_url']."img-uploaded/".$galeri['thumbnail']?>" alt="">
@@ -66,8 +63,8 @@
                     </div>
                     </a>
                 </div>
-         <?php }?>
-            </div>
+                <?php }?>
+        </div>     
         </div>
     </div>
     <!-- Banner Section End -->
