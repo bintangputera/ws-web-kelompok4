@@ -15,6 +15,7 @@ RewriteRule ^admin/tambah-portofolio ./admin/pages/portofolio/tambah-portofolio.
 
 RewriteRule ^admin/daftar-user ./admin/pages/user/daftar-user.php
 RewriteRule ^admin/level-user ./admin/pages/user/level-user.php
+RewriteRule ^admin/edit-user/([a-zA-Z0-9_-]+)$ ./admin/pages/user/edit.php?id=$1
 
 RewriteRule ^admin/tentang ./admin/pages/tentang/index.php
 

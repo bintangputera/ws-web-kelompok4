@@ -60,7 +60,7 @@
                       echo "<td>".$item_data['ket_level']."</td>";
                       echo "<td>".$item_data['username']."</td>";
                       echo "<td>".$item_data['password']."</td>";
-                      echo "<td><a href='edit-barang.php?id=$item_data[id_user]' class='btn btn-primary'><i class='fa fa-edit'></i></a></td>";
+                      echo "<td><a href='".$_ENV['admin_base_url']."edit-user/$item_data[id_user]' class='btn btn-primary'><i class='fa fa-edit'></i></a></td>";
                       echo "</tr>"; 
                     }
                     ?>
