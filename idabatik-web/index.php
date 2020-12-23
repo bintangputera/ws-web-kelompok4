@@ -428,33 +428,33 @@
                     <div class="col-lg-4">
                         <div class="single-benefit">
                             <div class="sb-icon">
-                                <img src="img/icon-1.png" alt="">
+                                <img src="img/pro.png" alt="">
                             </div>
                             <div class="sb-text">
-                                <h6>Free Shipping</h6>
-                                <p>For all order over 99$</p>
+                                <h6>Professional</h6>
+                                <p>Pengrajin Terlatih</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                    <div class="single-benefit">
+                            <div class="sb-icon">
+                                <img src="img/terpercaya.png" alt="">
+                            </div>
+                            <div class="sb-text">
+                                <h6>Terpercaya</h6>
+                                <p>Aman dan Tepat</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="single-benefit">
                             <div class="sb-icon">
-                                <img src="img/icon-2.png" alt="">
+                                <img src="img/quality.png" alt="">
                             </div>
                             <div class="sb-text">
-                                <h6>Delivery On Time</h6>
-                                <p>If good have prolems</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-benefit">
-                            <div class="sb-icon">
-                                <img src="img/icon-1.png" alt="">
-                            </div>
-                            <div class="sb-text">
-                                <h6>Secure Payment</h6>
-                                <p>100% secure payment</p>
+                                <h6>Berkualitas</h6>
+                                <p>100% Berkualitas Tinggi</p>
                             </div>
                         </div>
                     </div>
