@@ -11,6 +11,16 @@
 
 ?>
 
+<style>
+    .image-crop{
+        width:100px;
+        height:250px;
+        background-position:center center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+</style>
+
 </head>
 
 <body>
@@ -84,7 +94,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="filter-control">    
+                    <div class="filter-control">
+                        <h3>Produk Terbaru</h3>
                     </div>
                     <div class="product-slider owl-carousel">
                             <?php include "partial/product.php";
@@ -181,7 +192,7 @@
                     ?>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-latest-blog">
-                        <img src="<?= $_ENV['base_url']."uploaded-images/".$blog['thumbnail']?>" alt="">
+                        <img class="image-crop" src="<?= $_ENV['base_url']."uploaded-images/".$blog['thumbnail']?>" alt="">
                         <div class="latest-text">
                             <div class="tag-list">
                                 <div class="tag-item">

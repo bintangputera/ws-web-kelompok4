@@ -66,11 +66,6 @@
                         <li <?php echo ($title == "IdaBatik Bondowoso") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>">Home</a></li>
                         <li <?php echo ($title == "Galeri | IdaBatik" or $title == "Detail Produk | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>galeri/">Galeri</a></li>
                         <li <?php echo ($title == "Portofolio | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>portofolio">Porto</a>
-                            <ul class="dropdown">
-                                <li><a href="#">Men's</a></li>
-                                <li><a href="#">Women's</a></li>
-                                <li><a href="#">Kid's</a></li>
-                            </ul>
                         </li>
                         <li <?php echo ($title == "Blog | IdaBatik" || $is_blog == "yes") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>blog/">Blog</a></li>
                         <li <?php echo ($title == "Kontak Kami | IdaBatik") ? $active : $no_active; ?>><a href="<?= $_ENV['base_url'] ?>kontak/">Kontak</a></li>

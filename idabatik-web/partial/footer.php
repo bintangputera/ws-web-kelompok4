@@ -5,7 +5,7 @@
                 <div class="col-lg-3">
                     <div class="footer-left">
                         <div class="footer-logo">
-                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                            <a href="#"><img src="<?= $_ENV['base_url'] ?>img/log.png" alt=""></a>
                         </div>
                         <ul>
                             <li>Address: Karang Tengah, Kalianyar, Tamanan, Bondowoso Regency, East Java 68263</li>

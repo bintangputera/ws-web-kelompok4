@@ -10,7 +10,7 @@
 <style>
     .image-crop{
         width:100px;
-        height:200px;
+        height:250px;
         background-position:center center;
         background-repeat: no-repeat;
         object-fit: cover;
