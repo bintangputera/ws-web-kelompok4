@@ -1,8 +1,9 @@
  <?php include "db/connection.php" ?>
 <?php 
     $title = "IdaBatik Bondowoso";
-
+    $data = mysqli_query($mysqli, "select produk.id_produk, produk.nama_produk, produk.slug, jenis_produk.jenis_produk, jenis_kain.jenis_kain, produk.harga, produk.deskripsi, produk.thumbnail from ((produk Inner join jenis_produk on produk.id_jenis = jenis_produk.id_jenis) INNER JOIN jenis_kain on produk.id_jenis_kain = jenis_kain.id_jenis_kain)");
     $query = mysqli_query($mysqli, "SELECT * FROM slider_gallery");
+   
 ?>
 <?php include "partial/header-html.php" ?>
 <?php
@@ -38,7 +39,6 @@
         <div class="hero-items owl-carousel">
             <?php 
                 while ($gallery = mysqli_fetch_array($query)) {
- 
             ?>
             <div class="single-hero-items set-bg" data-setbg="<?= $_ENV['base_url'].'gallery/'.$gallery['file'] ?>">
                 <div class="container"s>
@@ -59,32 +59,22 @@
     <!-- Banner Section Begin -->
     <div class="banner-section spad">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4">
+        <div class="row">
+                <?php
+                    while ($galeri = mysqli_fetch_array($data)) { 
+                ?>
+                <div class="col-lg-4 col-sm-6">
+                <a href="<?=$_ENV['base_url']?>pages/galeri/">
                     <div class="single-banner">
-                    <img  src="img/banner-1.jpg" alt="">
+                        <img width="108px" height="260px" src="<?= $_ENV['base_url']."img-uploaded/".$galeri['thumbnail']?>" alt="">
                         <div class="inner-text">
-                            <h4>Men’s</h4>
+                            <h4><?= $galeri['jenis_produk'] ?></h4>
                         </div>
                     </div>
+                    </a>
                 </div>
-                <div class="col-lg-4">
-                    <div class="single-banner">
-                        <img src="img/banner-2.jpg" alt="">
-                        <div class="inner-text">
-                            <h4>Women’s</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-banner">
-                        <img src="img/banner-3.jpg" alt="">
-                        <div class="inner-text">
-                            <h4>Kid’s</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <?php }?>
+        </div>     
         </div>
     </div>
     <!-- Banner Section End -->
@@ -213,33 +203,51 @@
                     <div class="col-lg-4">
                         <div class="single-benefit">
                             <div class="sb-icon">
-                                <img src="img/icon-1.png" alt="">
+                                <img src="img/pro.png" alt="">
                             </div>
                             <div class="sb-text">
-                                <h6>Free Shipping</h6>
+<<<<<<< HEAD
+                                <h6>Professional</h6>
+                                <p>Pengrajin Terlatih</p>
+=======
+                                <h6>Terpercaya</h6>
                                 <p>For all order over 99$</p>
+>>>>>>> babbad5eae1db4764b21b470632cd67951e90b01
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="single-benefit">
+                    <div class="single-benefit">
                             <div class="sb-icon">
-                                <img src="img/icon-2.png" alt="">
+<<<<<<< HEAD
+                                <img src="img/terpercaya.png" alt="">
                             </div>
                             <div class="sb-text">
-                                <h6>Delivery On Time</h6>
+                                <h6>Terpercaya</h6>
+                                <p>Aman dan Tepat</p>
+=======
+                                <img src="img/Terpercaya-1.jpg" alt="">
+                            </div>
+                            <div class="sb-text">
+                                <h6>Berkualitas</h6>
                                 <p>If good have prolems</p>
+>>>>>>> babbad5eae1db4764b21b470632cd67951e90b01
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="single-benefit">
                             <div class="sb-icon">
-                                <img src="img/icon-1.png" alt="">
+                                <img src="img/quality.png" alt="">
                             </div>
                             <div class="sb-text">
-                                <h6>Secure Payment</h6>
+<<<<<<< HEAD
+                                <h6>Berkualitas</h6>
+                                <p>100% Berkualitas Tinggi</p>
+=======
+                                <h6>Bahan bagus</h6>
                                 <p>100% secure payment</p>
+>>>>>>> babbad5eae1db4764b21b470632cd67951e90b01
                             </div>
                         </div>
                     </div>
