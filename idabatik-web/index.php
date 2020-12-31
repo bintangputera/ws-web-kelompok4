@@ -206,32 +206,20 @@
                                 <img src="img/pro.png" alt="">
                             </div>
                             <div class="sb-text">
-<<<<<<< HEAD
                                 <h6>Professional</h6>
                                 <p>Pengrajin Terlatih</p>
-=======
-                                <h6>Terpercaya</h6>
                                 <p>For all order over 99$</p>
->>>>>>> babbad5eae1db4764b21b470632cd67951e90b01
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                     <div class="single-benefit">
                             <div class="sb-icon">
-<<<<<<< HEAD
                                 <img src="img/terpercaya.png" alt="">
                             </div>
                             <div class="sb-text">
                                 <h6>Terpercaya</h6>
                                 <p>Aman dan Tepat</p>
-=======
-                                <img src="img/Terpercaya-1.jpg" alt="">
-                            </div>
-                            <div class="sb-text">
-                                <h6>Berkualitas</h6>
-                                <p>If good have prolems</p>
->>>>>>> babbad5eae1db4764b21b470632cd67951e90b01
                             </div>
                         </div>
                     </div>
@@ -241,13 +229,8 @@
                                 <img src="img/quality.png" alt="">
                             </div>
                             <div class="sb-text">
-<<<<<<< HEAD
                                 <h6>Berkualitas</h6>
                                 <p>100% Berkualitas Tinggi</p>
-=======
-                                <h6>Bahan bagus</h6>
-                                <p>100% secure payment</p>
->>>>>>> babbad5eae1db4764b21b470632cd67951e90b01
                             </div>
                         </div>
                     </div>
