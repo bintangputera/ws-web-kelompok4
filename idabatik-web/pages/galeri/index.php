@@ -73,7 +73,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="pi-pic">
-                                        <img width="108px" height="260px" src="<?= $_ENV['base_url']."img-uploaded/".$produk['thumbnail']?>" alt="">
+                                        <img width="108px" height="260px" src="<?= $_ENV['base_url']."uploaded-images/product/".$produk['thumbnail']?>" alt="">
                                         <ul>
                                             <li class="w-icon active"><a href="#"><i class="fa fa-whatsapp"></i></a></li>
                                             <li class="quick-view"><a href="<?= $_ENV['base_url']?>produk/<?= $produk['slug'] ?>">Lihat Detail</a>
@@ -100,40 +100,6 @@
         </div>
     </section>
     <!-- Product Shop Section End -->
-
-    <!-- Partner Logo Section Begin -->
-    <div class="partner-logo">
-        <div class="container">
-            <div class="logo-carousel owl-carousel">
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-1.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-2.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-3.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-4.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-5.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Partner Logo Section End -->
     <?php 
         include "../../partial/footer.php";
     ?>

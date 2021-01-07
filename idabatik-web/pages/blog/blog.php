@@ -62,7 +62,7 @@
                             <p><?= $kategori ?> <span>- <?= $created_at ?></span></p>
                         </div>
                         <div class="blog-large-pic">
-                            <img class="image-crop" src="<?= $_ENV['base_url'] ?>uploaded-images/<?= $thumbnail ?>" alt="">
+                            <img class="image-crop" src="<?= $_ENV['base_url'] ?>uploaded-images/blog/<?= $thumbnail ?>" alt="">
                         </div>
                         <div class="blog-detail-desc">
                             <?= $konten ?>
@@ -78,10 +78,7 @@
                                 <span>Share:</span>
                                 <div class="social-links">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
                                     <a href="#"><i class="fa fa-instagram"></i></a>
-                                    <a href="#"><i class="fa fa-youtube-play"></i></a>
                                 </div>
                             </div>
                         </div>

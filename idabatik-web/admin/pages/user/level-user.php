@@ -40,11 +40,6 @@
               <h6 class="m-0 font-weight-bold text-primary">Tabel Level User</h6>
             </div>
             <div class="card-body">
-              <div class="float-right">
-                <button class="btn btn-primary me-md-2 d-sm-inline-block " type="button" data-toggle="modal" data-target="#addLevelModal">
-                  <i class="fa fa-plus fa-sm"></i> Tambah Level
-                </button>
-              </div>
               <div class="table-responsive">
                 <br>
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -52,7 +47,6 @@
                     <tr>
                       <th>ID Level</th>
                       <th>Level</th>
-                      <th>Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -62,7 +56,6 @@
                       echo "<tr>";
                       echo "<td>".$item_data['id_level']."</td>";
                       echo "<td>".$item_data['ket_level']."</td>";
-                      echo "<td><a href='edit-barang.php?id=$item_data[id_level]' class='btn btn-primary'><i class='fa fa-edit'></i></a></td>";
                       echo "</tr>"; 
                     }
                     ?>

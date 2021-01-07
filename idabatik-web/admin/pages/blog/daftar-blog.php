@@ -55,7 +55,7 @@
                       echo "<tr>";
                       echo "<td>".$item_data['judul']."</td>";
                       echo "<td>".$item_data['kategori']."</td>";
-                      echo "<td><a href='edit/$item_data[id_blog]' class='btn btn-primary'><i class='fa fa-edit'></i></a></td>";
+                      echo "<td><a href='".$_ENV['admin_base_url']."blog/edit/$item_data[id_blog]' class='btn btn-primary'><i class='fa fa-edit'></i></a></td>";
                       echo "</tr>"; 
                     }
                     ?>

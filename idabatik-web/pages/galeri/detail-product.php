@@ -38,7 +38,7 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="product-pic-zoom">
-                                <img class="product-big-img" src="<?= $_ENV['base_url']."img-uploaded/". $produk['thumbnail']?>" alt="">
+                                <img class="product-big-img" src="<?= $_ENV['base_url']."uploaded-images/product/". $produk['thumbnail']?>" alt="">
                                 <div class="zoom-icon">
                                     <i class="fa fa-search-plus"></i>
                                 </div>

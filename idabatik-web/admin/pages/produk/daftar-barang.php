@@ -65,7 +65,7 @@
                       echo "<td>".$item_data['jenis_kain']."</td>";
                       echo "<td>".$item_data['harga']."</td>";
                       echo "<td>".substr($item_data['deskripsi'], 0,50)."....</td>";
-                      echo "<td><img style='width:50px;height:50px' src=".$_ENV['base_url']. "img-uploaded/".$item_data['thumbnail']."></td>";
+                      echo "<td><img style='width:50px;height:50px' src=".$_ENV['base_url']. "uploaded-images/product/".$item_data['thumbnail']."></td>";
                       echo "<td><a href='edit-barang.php?id=$item_data[id_produk]' class='btn btn-primary'><i class='fa fa-edit'></i></a></td>";
                       echo "</tr>"; 
                     }

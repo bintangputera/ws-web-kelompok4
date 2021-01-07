@@ -75,7 +75,7 @@
                                 <div class="col-lg-4 col-sm-4">
                                     <div class="blog-item">
                                         <div class="bi-pic">
-                                            <img class="image-crop" src="<?= $_ENV['base_url']?>uploaded-images/<?= $thumbnail ?>">
+                                            <img class="image-crop" src="<?= $_ENV['base_url']?>uploaded-images/blog/<?= $thumbnail ?>">
                                         </div>
                                         <div class="bi-text">
                                             <a href="<?= $_ENV['base_url'] ?>detail-blog/<?= $slug ?>">

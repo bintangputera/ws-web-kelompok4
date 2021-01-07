@@ -20,7 +20,7 @@
 
 			$nama_gambar_baru = $angka_acak.'-'.$thumbnail;
 			if (in_array($ext, $allowed_ext) == true) {
-			 	move_uploaded_file($file_tmp, '../../img-uploaded/'. $nama_gambar_baru);
+			 	move_uploaded_file($file_tmp, '../../uploaded-images/product/'. $nama_gambar_baru);
 
 			 	$query = "INSERT INTO produk(id_jenis, id_jenis_kain, nama_produk, slug, harga, deskripsi, thumbnail) VALUES 
 				('".$jenis."', '".$jenis_kain."', '".$nama_produk."', '".$slug."', '".$harga."', '".$deskripsi."', '".$nama_gambar_baru."') ";

@@ -66,7 +66,7 @@
                         echo "<div class='alert alert-danger' role='alert'>Username atau password anda salah</div>";
                       }else if($_GET['pesan'] == "logout"){
                         echo "<div class='alert alert-success' role='alert'>Logout Berhasil</div>";
-                      }else if($_GET['pesan'] == "error"){
+                      }else if($_GET['pesan'] == "login_first"){
                         echo "<div class='alert alert-success' role='alert'>Silahkan login sebagai admin</div>";
                       }
                   }
@@ -78,7 +78,7 @@
                     <div class="form-group">
                       <input type="password" class="form-control form-control-user" name="password" id="password" placeholder="Password">
                     </div>
-                    <button href="index.html" name="submit" type="submit" class="btn btn-primary btn-user btn-block">
+                    <button name="submit" type="submit" class="btn btn-primary btn-user btn-block">
                       Login
                     </button>
                     <hr>

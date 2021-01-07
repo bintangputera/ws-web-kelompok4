@@ -21,7 +21,7 @@
 
 			$nama_gambar_baru = $angka_acak.'-'.$thumbnail;
 			if (in_array($ext, $allowed_ext) == true) {
-			 	move_uploaded_file($file_tmp, '../../uploaded-images/'. $nama_gambar_baru);
+			 	move_uploaded_file($file_tmp, '../../uploaded-images/blog/'. $nama_gambar_baru);
 
 				$query = "INSERT INTO blog(id_kategori, judul, slug, thumbnail, konten_blog, created_at) VALUES 
 					('".$kategori."', '".$judul."', '".$slug."', '".$nama_gambar_baru."', '".$editorContent."', '".$date."')";
@@ -53,7 +53,7 @@
 	                    //silahkan ganti index.php sesuai halaman yang akan dituju
 	                  }
 		}
-			header("location:../pages/blog/daftar-blog");
+			// header("location:../pages/blog/daftar-blog");
 
 		if($insert){
 			$statusMsg = "The editor contect has been inserted";

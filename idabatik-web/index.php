@@ -61,12 +61,13 @@
         <div class="container-fluid">
         <div class="row">
                 <?php
-                    while ($galeri = mysqli_fetch_array($data)) { 
+                   for($i = 1; $i < 4; $i++) { 
+                       $galeri = mysqli_fetch_array($data);
                 ?>
                 <div class="col-lg-4 col-sm-6">
                 <a href="<?=$_ENV['base_url']?>pages/galeri/">
                     <div class="single-banner">
-                        <img width="108px" height="260px" src="<?= $_ENV['base_url']."img-uploaded/".$galeri['thumbnail']?>" alt="">
+                        <img width="108px" height="260px" src="<?= $_ENV['base_url']."uploaded-images/product/".$galeri['thumbnail']?>" alt="">
                         <div class="inner-text">
                             <h4><?= $galeri['jenis_produk'] ?></h4>
                         </div>
@@ -93,7 +94,7 @@
                             ?>
                             <div class="product-item">
                                 <div class="pi-pic">
-                                    <img  src="<?= $_ENV['base_url']."img-uploaded/".$produk['thumbnail']?>" alt="">
+                                    <img  src="<?= $_ENV['base_url']."uploaded-images/product/".$produk['thumbnail']?>" alt="">
                                     <ul>
                                         <li class="w-icon active"><a href="#"><i class="fa fa-whatsapp"></i></a></li>
                                         <li class="quick-view"><a href="<?= $_ENV['base_url']?>produk/<?= $produk['slug'] ?>">Lihat Detail</a>
@@ -182,7 +183,7 @@
                     ?>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-latest-blog">
-                        <img class="image-crop" src="<?= $_ENV['base_url']."uploaded-images/".$blog['thumbnail']?>" alt="">
+                        <img class="image-crop" src="<?= $_ENV['base_url']."uploaded-images/blog/".$blog['thumbnail']?>" alt="">
                         <div class="latest-text">
                             <div class="tag-list">
                                 <div class="tag-item">
@@ -208,7 +209,10 @@
                             <div class="sb-text">
                                 <h6>Professional</h6>
                                 <p>Pengrajin Terlatih</p>
+<<<<<<< Updated upstream
                                 <p>For all order over 99$</p>
+=======
+>>>>>>> Stashed changes
                             </div>
                         </div>
                     </div>

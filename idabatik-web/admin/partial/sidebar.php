@@ -18,7 +18,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li <?php echo ($title == "IdaBatik - Dashboard") ? $active : $no_active; ?>>
-        <a class="nav-link" href="<?php echo $_ENV['base_url']; ?>/admin">
+        <a class="nav-link" href="<?php echo $_ENV['base_url']; ?>admin">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
